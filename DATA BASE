@@ -1,7 +1,8 @@
+
+Origin of the Data
 http://simplemaps.com/data/world-cities
 
-#I-)BASIC PACKAGES
-
+#I-)Essential Packages
 require(leaflet)
 require(data.table)
 require(dplyr)
@@ -13,11 +14,12 @@ library(KernSmooth)
 
 #II-)Set work Directory
 getwd()
-[1] "C:/Users/smsanda/Documents"
 setwd("/Users/smsanda/Documents/")
+
+#III-)Processing Data
 geodata <- read.csv(file = "simplemaps-worldcities-basic.csv",
-+ header = TRUE, 
-+ sep = ",", )
+header = TRUE, 
+sep = ",", )
 View(geodata)
 city <- subset(geodata, select = c("city", "pop","lat", "lng"))
 colnames(city) <- c("city", "population", "latitude", "longitude")
@@ -29,5 +31,4 @@ my_map<-city%>%
 leaflet()%>%
 addTiles()%>%
 addCircles(weight = 3, radius = (city$population)/200, popup = strwrap(city$province))
-Assuming 'longitude' and 'latitude' are longitude and latitude, respectively
 my_map
