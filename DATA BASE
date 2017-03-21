@@ -17,18 +17,18 @@ getwd()
 setwd("/Users/smsanda/Documents/")
 
 #III-)Processing Data
-geodata <- read.csv(file = "simplemaps-worldcities-basic.csv",
+cities <- read.csv(file = "simplemaps-worldcities-basic.csv",
 header = TRUE, 
 sep = ",", )
-View(geodata)
-city <- subset(geodata, select = c("city", "pop","lat", "lng"))
+View(cities)
+city <- subset(cities, select = c("city", "pop","lat", "lng"))
 colnames(city) <- c("city", "population", "latitude", "longitude")
 city$popsep <- format(city$population, big.mark=",",scientific=FALSE)
-View(geodata)
+View(cities)
 city$province <- do.call(paste, c(city[c("city", "popsep")], sep = "    population:"))
 library(leaflet)
 my_map<-city%>%
 leaflet()%>%
 addTiles()%>%
-addCircles(weight = 3, radius = (city$population)/200, popup = strwrap(city$province))
+addCircles(weight = 10, radius = sqrt(city$population)*30, popup = strwrap(city$province))
 my_map
