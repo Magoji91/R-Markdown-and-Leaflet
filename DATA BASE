@@ -1,6 +1,6 @@
 
-Origin of the Data
-http://simplemaps.com/data/world-cities
+#Origin of the Data
+#http://simplemaps.com/data/world-cities
 
 #I-)Essential Packages
 require(leaflet)
@@ -30,5 +30,5 @@ library(leaflet)
 my_map<-city%>%
 leaflet()%>%
 addTiles()%>%
-addCircles(weight = 10, radius = sqrt(city$population)*30, popup = strwrap(city$province))
+addCircles(weight = 07, radius = sqrt(city$population)*07, popup = strwrap(city$province))
 my_map
