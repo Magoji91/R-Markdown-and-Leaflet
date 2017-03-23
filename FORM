@@ -9,7 +9,7 @@ setwd("/Users/User/Documents/")
 #LOAD DATA 
 cities <- read.csv(file = "simplemaps-worldcities-basic.csv", header = TRUE, sep = ",", stringsAsFactors=FALSE)
 
-#STUDY THE DATA
+#PROCESSING THE DATA
 head(cities)
 View(cities)
 city <- subset(cities, select = c("city", "pop","lat", "long"))
@@ -26,7 +26,7 @@ library(leaflet)
 my_map<-city%>%
 leaflet()%>%
 addTiles()%>%
-addCircles(weight = 10, radius = sqrt(city$population)*20, popup = strwrap(city$province))
+addCircles(weight = 10, radius = sqrt(city$population)*10, popup = strwrap(city$province))
 
 my_map
 
