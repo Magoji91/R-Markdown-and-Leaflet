@@ -53,19 +53,19 @@ cities <- read.csv(file = "simplemaps-worldcities-basic.csv", header = TRUE, sep
 #STUDY THE DATA
 head(cities)
 View(cities)
-city <- subset(cities, select = c("city", "pop","lat", "long"))
-colnames(city) <- c("city", "population", "latitude", "longitude")
-city$popsep <- format(city$population, big.mark=",",scientific=FALSE)
+city <- subset(cities, select = c("city", "rank","lat", "long"))
+colnames(city) <- c("city", "ranking", "latitude", "longitude")
+city$popsep <- format(city$ranking, big.mark=",",scientific=FALSE)
 View(cities)
-city$province <- do.call(paste, c(city[c("city", "popsep")], sep = "    population:"))
-colnames(city) <- c("city", "population", "latitude", "longitude")
-city$popsep <- format(city$population, big.mark=",",scientific=FALSE)
+city$province <- do.call(paste, c(city[c("city", "popsep")], sep = "    ranking:"))
+colnames(city) <- c("city", "ranking", "latitude", "longitude")
+city$popsep <- format(city$ranking, big.mark=",",scientific=FALSE)
 View(cities)
-city$province <- do.call(paste, c(city[c("city", "popsep")], sep = "    population:"))
+city$province <- do.call(paste, c(city[c("city", "popsep")], sep = "    ranking:"))
 library(leaflet)
 my_map<-city%>%
 leaflet()%>%
 addTiles()%>%
-addCircles(weight = 07, radius = sqrt(city$population)*10, popup = strwrap(city$province))
+addCircles(weight = 07, radius = sqrt(city$ranking)*10, popup = strwrap(city$province))
 
 my_map
