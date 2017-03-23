@@ -1,0 +1,7 @@
+#II-)Set work Directory
+getwd()
+setwd("/Users/User/Documents/")
+
+#III-)Processing Data
+cities <- read.csv(file = "simplemaps-worldcities-basic.csv", header = TRUE, sep = ",", stringsAsFactors=FALSE)
+
