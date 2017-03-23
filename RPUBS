@@ -9,45 +9,47 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+##THE PURPOSE OF THIS WORK: 
+Create a map using the "Leaflet" package and data from the Simple Maps website (http://simplemaps.com/data/world-cities) to show geographically where the ten best cities are located to live, according to the ROUGH GUIDE (https: //www.roughguides.com/best-places/2016/top-10-cities/#).
+
 ##1. REYKJAVÍK, ICELAND
-#Increasing numbers of tourists are heading to Reykjavík for the city’s arts scene, cool nightlife and the slew of natural wonders that lie right on its doorstep. Amid the colourful scattering of toy-like, painted houses you can gorge on the freshest fish, head out on a famously messy rúntur (round tour) – the Reykjavík residents’ Friday night boozy blowout – or let loose in booming nightclubs in which almost anything goes. And there’s no better way to tackle your Icelandic hangover than with a dip in one of the country’s steamy hot pools or on the edge of a wind-battered cliff, just a few hours’ drive from this small but brilliant capital.
+Increasing numbers of tourists are heading to Reykjavík for the city’s arts scene, cool nightlife and the slew of natural wonders that lie right on its doorstep. Amid the colourful scattering of toy-like, painted houses you can gorge on the freshest fish, head out on a famously messy rúntur (round tour) – the Reykjavík residents’ Friday night boozy blowout – or let loose in booming nightclubs in which almost anything goes. And there’s no better way to tackle your Icelandic hangover than with a dip in one of the country’s steamy hot pools or on the edge of a wind-battered cliff, just a few hours’ drive from this small but brilliant capital.
 
 #2. MEXICO CITY, MEXICO
-#Tell someone you’re going to Mexico City and their first response will usually be: “Isn’t that dangerous?” But so long as you take the same precautions you would in any large city, the answer is no. Mexico’s bustling capital and economic powerhouse can be a fun and safe destination. Hip neighbourhoods, incredible architecture, humble street markets and an eclectic culture combine in this frenetic, lovable city. An undeniably gritty cool pervades in the streets, and new wave mezcalerías, art galleries, vintage boutiques and cafés continue to transform neighbourhoods like bohemian La Roma and design-minded Condesa. Mexico City’s energy is almost addictive enough to forget everything else this rest this diverse country has to offer
+Tell someone you’re going to Mexico City and their first response will usually be: “Isn’t that dangerous?” But so long as you take the same precautions you would in any large city, the answer is no. Mexico’s bustling capital and economic powerhouse can be a fun and safe destination. Hip neighbourhoods, incredible architecture, humble street markets and an eclectic culture combine in this frenetic, lovable city. An undeniably gritty cool pervades in the streets, and new wave mezcalerías, art galleries, vintage boutiques and cafés continue to transform neighbourhoods like bohemian La Roma and design-minded Condesa. Mexico City’s energy is almost addictive enough to forget everything else this rest this diverse country has to offer
 
 #3. SEOUL, SOUTH KOREA
-#If you haven’t visited Asia’s mighty hub of pop culture, it’s high time you did. Beyond the billboard teenyboppers and glass towers of Gangnam, Seoul has a vibrant underbelly of ultra-cool that much of the world is just beginning to discover. Far more than just chic cafés and Korean craft brews, the city is home to graffiti-covered basement bars and hidden restaurants serving both traditional and fusion cuisines. With the 2018 Winter Olympics looming, now is the time to experience Korea’s capital before the crowds take over.
+If you haven’t visited Asia’s mighty hub of pop culture, it’s high time you did. Beyond the billboard teenyboppers and glass towers of Gangnam, Seoul has a vibrant underbelly of ultra-cool that much of the world is just beginning to discover. Far more than just chic cafés and Korean craft brews, the city is home to graffiti-covered basement bars and hidden restaurants serving both traditional and fusion cuisines. With the 2018 Winter Olympics looming, now is the time to experience Korea’s capital before the crowds take over.
 
 #4. LJUBLJANA, SLOVENIA
-#Winning the well-deserved accolade of European Green Capital of 2016, the elegant Slovenian capital boasts a wealth of green spaces. If you’re feeling green yourself, the car-free centre is perfect to explore by bicycle, or else you can navigate a stand-up paddleboard along the gorgeously green Ljubljanica river that flows through the centre. Low prices mean you can find brilliant budget food and accommodation options without compromising on quality, plus it’s just a hop to the country’s stunning mountains, vineyards and beaches.
+Winning the well-deserved accolade of European Green Capital of 2016, the elegant Slovenian capital boasts a wealth of green spaces. If you’re feeling green yourself, the car-free centre is perfect to explore by bicycle, or else you can navigate a stand-up paddleboard along the gorgeously green Ljubljanica river that flows through the centre. Low prices mean you can find brilliant budget food and accommodation options without compromising on quality, plus it’s just a hop to the country’s stunning mountains, vineyards and beaches.
 
 #5. WROCLAW, POLAND
-#After a devastating flood in the 1990s Wroclaw was painstakingly rebuilt – its mammoth Germanic churches, Flemish-style mansions and Baroque palaces have been restored to their former glory. Though Wroclaw has yet to attract the large crowds of other Polish hotpots, it’s all set to change with its title as European Capital of Culture and World Book Capital in 2016. Join the lively student population and scores of Nobel Prize winners who call Wroclaw home, as plenty of special events run throughout the year alongside the many arts festivals that earned the city its reputation as a cultural hub.
+After a devastating flood in the 1990s Wroclaw was painstakingly rebuilt – its mammoth Germanic churches, Flemish-style mansions and Baroque palaces have been restored to their former glory. Though Wroclaw has yet to attract the large crowds of other Polish hotpots, it’s all set to change with its title as European Capital of Culture and World Book Capital in 2016. Join the lively student population and scores of Nobel Prize winners who call Wroclaw home, as plenty of special events run throughout the year alongside the many arts festivals that earned the city its reputation as a cultural hub.
 
 #6. NASHVILLE, USA
-#As one of the fastest growing cities in the US, change is in the air for Nashville. This famously conservative place has experienced a huge surge in young professionals, who have brought new life to the city’s more liberal, artsy side. It’s an exciting time for the city, but culturally Nashville’s soul remains unchanged: a fierce love of southern cooking and deep passion for music – especially live music – still prevail. This year, take a trip to the Great Smoky Mountains National Park to go firefly watching, before kicking back with fried chicken and a night at a classic honky-tonk.
+As one of the fastest growing cities in the US, change is in the air for Nashville. This famously conservative place has experienced a huge surge in young professionals, who have brought new life to the city’s more liberal, artsy side. It’s an exciting time for the city, but culturally Nashville’s soul remains unchanged: a fierce love of southern cooking and deep passion for music – especially live music – still prevail. This year, take a trip to the Great Smoky Mountains National Park to go firefly watching, before kicking back with fried chicken and a night at a classic honky-tonk.
 
 #7. AMSTERDAM, THE NETHERLANDS
-#With a new London to Amsterdam Eurostar service (calling at Antwerp and Rotterdam) set to start in 2016, the Dutch capital is about to get a whole lot more accessible. The city is well prepared, with revamped museums, a state-of-the-art film institute and a flourishing hub of avant-garde culture in the regenerated NDSM shipyard – a hangout housing restaurants, bars and a skatepark. New visitors and new venues are just the start of it – Amsterdam’s going to be buzzing this year.
+With a new London to Amsterdam Eurostar service (calling at Antwerp and Rotterdam) set to start in 2016, the Dutch capital is about to get a whole lot more accessible. The city is well prepared, with revamped museums, a state-of-the-art film institute and a flourishing hub of avant-garde culture in the regenerated NDSM shipyard – a hangout housing restaurants, bars and a skatepark. New visitors and new venues are just the start of it – Amsterdam’s going to be buzzing this year.
 
 #8. HULL, ENGLAND
-#After being named the least romantic city in the UK in 2015, and once crowned one of the “crap towns” of the UK, things are finally looking up for Hull. It’s the UK City of Culture in 2017, so this year is Hull‘s practice run. It’ll be brimming with new hotels and restaurants, and even more of that distinctive home-grown creativity the city has always had. There are atmospheric old-timey pubs, eight excellent museums and a picturesque Old Town with cobbled streets. This year’s fun is set to culminate in the September Freedom Festival, when the entire city is turned into a stage for performers and artists.
+After being named the least romantic city in the UK in 2015, and once crowned one of the “crap towns” of the UK, things are finally looking up for Hull. It’s the UK City of Culture in 2017, so this year is Hull‘s practice run. It’ll be brimming with new hotels and restaurants, and even more of that distinctive home-grown creativity the city has always had. There are atmospheric old-timey pubs, eight excellent museums and a picturesque Old Town with cobbled streets. This year’s fun is set to culminate in the September Freedom Festival, when the entire city is turned into a stage for performers and artists.
 
 #9. VANCOUVER, CANADA
-#New North American and transatlantic flight routes continue to roll out of Vancouver as airlines try to meet the world’s demand to visit this truly stunning city by the sea. Though certainly Canada’s most liveable metropolis, with a temperate climate and wraparound views of snow-capped peaks, it’s also the country’s most expensive. But that hasn’t stopped a host of exciting independent attractions from popping up: there are new microbreweries and restaurants making international waves. A gateway to the slopes of Whistler and the rainforests of Vancouver Island, and host to 2016’s World Rugby Sevens Series Tournament, this city is a must-visit all year-round.
+New North American and transatlantic flight routes continue to roll out of Vancouver as airlines try to meet the world’s demand to visit this truly stunning city by the sea. Though certainly Canada’s most liveable metropolis, with a temperate climate and wraparound views of snow-capped peaks, it’s also the country’s most expensive. But that hasn’t stopped a host of exciting independent attractions from popping up: there are new microbreweries and restaurants making international waves. A gateway to the slopes of Whistler and the rainforests of Vancouver Island, and host to 2016’s World Rugby Sevens Series Tournament, this city is a must-visit all year-round.
 
 #10. AGRA, INDIA
-#India's majestic former Mughal capital is too often experienced in brief as a traveller’s day trip from Delhi to the Taj Mahal. But there’s much more to enjoy here: extravagant monuments and tombs lining the Yamuna River bank, the Taj Mahotsav arts festival held in February and the crumbling Mughal gardens dotted across the city. The nearby deserted city of Fatehpur Sikri, one of the city’s three UNESCO World Heritage Sites, is an eerie escape from Agra’s chaotic centre.
+India's majestic former Mughal capital is too often experienced in brief as a traveller’s day trip from Delhi to the Taj Mahal. But there’s much more to enjoy here: extravagant monuments and tombs lining the Yamuna River bank, the Taj Mahotsav arts festival held in February and the crumbling Mughal gardens dotted across the city. The nearby deserted city of Fatehpur Sikri, one of the city’s three UNESCO World Heritage Sites, is an eerie escape from Agra’s chaotic centre.
 
+#WHERE IS THIS WONDERFUL PLACES?
 
-```{r cars}
-#INSTALL.PACKAGES("leaflet")
-
+```{r ranking}
 #SET WORKING DIRECTORY
 getwd()
 setwd("/Users/smsanda/Documents/")
 
-#LOAD DATA 
+#LOAD SITE DATA SIMPLE MAPS AFTER SELECTING ONLY THE TOP CITIES ELIGIBLE FROM ROUGH GUIDES AND REPLACING POPULATION DATA FOR RANKING.
 cities <- read.csv(file = "simplemaps-worldcities-basic.csv", header = TRUE, sep = ",", stringsAsFactors=FALSE)
 
 #STUDY THE DATA
@@ -55,17 +57,20 @@ head(cities)
 View(cities)
 city <- subset(cities, select = c("city", "rank","lat", "long"))
 colnames(city) <- c("city", "ranking", "latitude", "longitude")
-city$popsep <- format(city$ranking, big.mark=",",scientific=FALSE)
+city$ranksep <- format(city$ranking, big.mark=",",scientific=FALSE)
 View(cities)
-city$province <- do.call(paste, c(city[c("city", "popsep")], sep = "    ranking:"))
+city$top <- do.call(paste, c(city[c("city", "ranksep")], sep = "    ranking:"))
 colnames(city) <- c("city", "ranking", "latitude", "longitude")
-city$popsep <- format(city$ranking, big.mark=",",scientific=FALSE)
+city$ranksep <- format(city$ranking, big.mark=",",scientific=FALSE)
 View(cities)
-city$province <- do.call(paste, c(city[c("city", "popsep")], sep = "    ranking:"))
+city$top <- do.call(paste, c(city[c("city", "ranksep")], sep = "    ranking:"))
 library(leaflet)
 my_map<-city%>%
 leaflet()%>%
 addTiles()%>%
-addCircles(weight = 07, radius = sqrt(city$ranking)*10, popup = strwrap(city$province))
+addCircles(weight = 07, radius = sqrt(city$ranking)*10, popup = strwrap(city$top))
 
 my_map
+```
+
+
