@@ -30,6 +30,8 @@ addCircles(weight = 10, radius = sqrt(city$population)*20, popup = strwrap(city$
 
 my_map
 
+#TOP TEN CITIES BY THE ROUGH GUIDE
+
 #1. REYKJAVÍK, ICELAND
 #Increasing numbers of tourists are heading to Reykjavík for the city’s arts scene, cool nightlife and the slew of natural wonders that lie right on its doorstep. Amid the colourful scattering of toy-like, painted houses you can gorge on the freshest fish, head out on a famously messy rúntur (round tour) – the Reykjavík residents’ Friday night boozy blowout – or let loose in booming nightclubs in which almost anything goes. And there’s no better way to tackle your Icelandic hangover than with a dip in one of the country’s steamy hot pools or on the edge of a wind-battered cliff, just a few hours’ drive from this small but brilliant capital.
 
