@@ -1,7 +1,24 @@
-#II-)Set work Directory
 getwd()
 setwd("/Users/User/Documents/")
 
-#III-)Processing Data
 cities <- read.csv(file = "simplemaps-worldcities-basic.csv", header = TRUE, sep = ",", stringsAsFactors=FALSE)
+head(cities)
 
+View(cities)
+city <- subset(cities, select = c("city", "pop","lat", "long"))
+colnames(city) <- c("city", "population", "latitude", "longitude")
+city$popsep <- format(city$population, big.mark=",",scientific=FALSE)
+View(cities)
+city$province <- do.call(paste, c(city[c("city", "popsep")], sep = "    population:"))
+colnames(city) <- c("city", "population", "latitude", "longitude")
+city$popsep <- format(city$population, big.mark=",",scientific=FALSE)
+View(cities)
+city$province <- do.call(paste, c(city[c("city", "popsep")], sep = "    population:"))
+install.packages("leaflet")
+library(leaflet)
+install.packages("map")
+library(map)
+my_map<-city%>%
+leaflet()%>%
+addTiles()%>%
+addCircles(weight = 07, radius = sqrt(city$population)*07, popup = strwrap(city$province))
