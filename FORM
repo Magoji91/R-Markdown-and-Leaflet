@@ -16,8 +16,6 @@ View(cities)
 city$province <- do.call(paste, c(city[c("city", "popsep")], sep = "    population:"))
 install.packages("leaflet")
 library(leaflet)
-install.packages("map")
-library(map)
 my_map<-city%>%
 leaflet()%>%
 addTiles()%>%
